@@ -36,22 +36,24 @@ View a demo of this plugin: [Curtains](http://curtains.herokuapp.com/).
 How to Use
 ----------
 
-Enclose all of the parts that will have the effect in a div with class "pages".  
+To have the Curtains effect on your webpage:
 
-Enclose each page in a div with class "page".  
+- Enclose each part that you want to be an individual page in a div with class "page".  
 
-Include the javascript file [curtains_0_1.js](https://github.com/ericavonb/curtains/blob/master/curtain/curtains_0_1.js) in the body or in the head when the document loads.  
+- Enclose all of these pages that will have the effect in a div with class "pages".  
+
+- Include the javascript file [curtains_0_1.js](https://github.com/ericavonb/curtains/blob/master/curtain/curtains_0_1.js) in the body or in the head when the document loads.  
 
 <a name="a4"/>
 Planned Updates
 ---------------
 Some planned updates to the plugin:
 
-- Add function such that adding the class "full" to a page makes it take up the height of the screen.
+- Add a function such that adding the class "full" to a page makes it take up the height of the screen.
 
-- Allow parallax within the pages easily.
+- Allow elements within the pages to have a parallax effect, i.e. scroll at a different speed from the rest of the page.  
 
-[Email](#a6) if you have any questions, comments, or suggestions.
+Contact me if you have any additional suggestions.
 
 <a name="a5"/>
 Licence
@@ -73,4 +75,6 @@ Author
 
 Erica von Buelow
 
-Contact at: [evonbuelow@gmail.com](mailto:evonbuelow@gmail.com)
+Contact at: [evonbuelow@gmail.com](mailto:evonbuelow@gmail.com)  
+
+*If you have any questions, comments, or suggestions, send me an email.*
