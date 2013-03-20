@@ -30,7 +30,7 @@ Demo
 
 View a demo of this plugin: [Curtains!](http://curtains.herokuapp.com/)  
 
-*    This demo is a [Roots](http://roots.cs) project. View the Roots project code in the [demo folder](https://github.com/ericavonb/curtains/tree/master/demo).*
+*    This demo is a [Roots](http://roots.cx) project. View the Roots project code in the [demo folder](https://github.com/ericavonb/curtains/tree/master/demo).*
 
 <a name="a3"/>
 How to Use
