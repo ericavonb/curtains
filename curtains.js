@@ -3,17 +3,17 @@
    ======================================================================= */
 
 
-var topPages = [{className: 'top', zIndex: 100},
+var topCurtains = [{className: 'top', zIndex: 100},
 		{tagName: 'header', zIndex: 100},
 		{tagName: 'nav', zIndex: 100},
 	       {tagName: 'footer', zIndex: 0}];
 
 
-var pages = document.getElementsByClassName('page');
+var curtains = document.getElementsByClassName('curtain');
 
 var heights = [0];
 
-var pageNum = 1;
+var curtainNum = 1;
 
 
 
@@ -51,29 +51,29 @@ function outerHeight(elem) {
 
 function init() {
 
-    var pageCont =  document.getElementsByClassName('pages')[0];
+    var curtainCont =  document.getElementsByClassName('curtains')[0];
     var header = document.getElementsByTagName('header')[0];
     var footer = document.getElementsByTagName('footer')[0];
 
-    for (var i = 0; i < topPages.length; i++) {
-	setZindex(topPages[i]);
+    for (var i = 0; i < topCurtains.length; i++) {
+	setZindex(topCurtains[i]);
     };
     
-    for (var i = 0; i < pages.length; i++) {
-	page = pages[i];
-	page.style.zIndex = 99 - i;
-	page.style.position = (i === 0) ? "relative" : "fixed";
-	page.style.top = '0px';
-	if (i == pages.length - 1)
-	    page.style.marginBottom = outerHeight(footer) + 'px';
-	heights[i + 1] = heights[i] + outerHeight(page);
+    for (var i = 0; i < curtains.length; i++) {
+	curtain = curtains[i];
+	curtain.style.zIndex = 99 - i;
+	curtain.style.position = (i === 0) ? "relative" : "fixed";
+	curtain.style.top = '0px';
+	if (i == curtains.length - 1)
+	    curtain.style.marginBottom = outerHeight(footer) + 'px';
+	heights[i + 1] = heights[i] + outerHeight(curtain);
     };
 
-    pageCont.style.height = heights[heights.length - 1] + 'px';
+    curtainCont.style.height = heights[heights.length - 1] + 'px';
     
-    pageCont.style.position = "absolute";
-    pageCont.style.top = "0px";
-    pageCont.style.left = "0px";
+    curtainCont.style.position = "absolute";
+    curtainCont.style.top = "0px";
+    curtainCont.style.left = "0px";
 
     header.style.position = 'relative';
     header.style.top = "0px";
@@ -91,17 +91,17 @@ init();
 function curtain(e) {
     var winY = window.scrollY;
 
-    if (winY > heights[pageNum] && pageNum  < heights.length) {
-	pageNum += 1;
-	pages[pageNum - 1].style.position = "relative";
-	var id = pageNum > 1 ? window.location.pathname + '#' + pages[pageNum - 1].id : window.location.pathname;
-	history.replaceState({home: id}, "page " + pageNum, id);
+    if (winY > heights[curtainNum] && curtainNum  < heights.length) {
+	curtainNum += 1;
+	curtains[curtainNum - 1].style.position = "relative";
+	var id = curtainNum > 1 ? window.location.pathname + '#' + curtains[curtainNum - 1].id : window.location.pathname;
+	history.replaceState({home: id}, "curtain " + curtainNum, id);
     } else {
-	if (winY < heights[pageNum - 1]) {
-	    pages[pageNum - 1].style.position = "fixed";
-	    pageNum -= 1;
-	    var id = pageNum > 1 ? window.location.pathname + '#' + pages[pageNum - 1].id : window.location.pathname;
-	    history.replaceState({home: id}, "page " + pageNum, id);
+	if (winY < heights[curtainNum - 1]) {
+	    curtains[curtainNum - 1].style.position = "fixed";
+	    curtainNum -= 1;
+	    var id = curtainNum > 1 ? window.location.pathname + '#' + curtains[curtainNum - 1].id : window.location.pathname;
+	    history.replaceState({home: id}, "curtain " + curtainNum, id);
 	};
     };
 

@@ -253,12 +253,12 @@ a:visited {
 a:hover {
   color: #111;
 }
-.pages {
+.curtains {
   width: 100%;
   margin: 0px;
   padding: 0px;
 }
-.page {
+.curtain {
   height: 1000px;
   width: 100%;
   background: #f1f1f1 -webkit-gradient(linear, left top, left bottom, color-stop(0, #919191), color-stop(1, #f1f1f1)) repeat-x;
@@ -269,12 +269,12 @@ a:hover {
   background: #f1f1f1 linear-gradient(top, #919191 0%, #f1f1f1 100%) repeat-x;
   zoom: 1;
 }
-.page:before,
-.page:after {
+.curtain:before,
+.curtain:after {
   content: "";
   display: table;
 }
-.page:after {
+.curtain:after {
   clear: both;
 }
 footer {

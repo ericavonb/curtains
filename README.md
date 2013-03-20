@@ -21,16 +21,16 @@ About
 
 Curtains is a javascript plugin to add a neat [curtains effect](#a2) to your webpage.  
 
-A site using Curtains has a series of pages, each acting like a curtain that rises revealing the pages behind. Scrolling down moves the current page up the screen. The next page is fixed behind, revealed as the bottom of the current page becomes visible and moves up the screen. When the current page is no longer visible, the next page will start to move up the screen.  
+A site using Curtains has a series of curtains, each acting like a curtain that rises revealing the curtains behind. Scrolling down moves the current curtain up the screen. The next curtain is fixed behind, revealed as the bottom of the current curtain becomes visible and moves up the screen. When the current curtain is no longer visible, the next curtain will start to move up the screen.  
 
 
 <a name="a2"/>
 Demo
 ----
 
-View a demo of this plugin: [Curtains](http://curtains.herokuapp.com/).  
+View a demo of this plugin: [Curtains!](http://curtains.herokuapp.com/)  
 
-*This demo is a [Roots](roots.cs) project. View the Roots project code in the [demo folder](https://github.com/ericavonb/curtains/tree/master/demo).*
+*    This demo is a [Roots](roots.cs) project. View the Roots project code in the [demo folder](https://github.com/ericavonb/curtains/tree/master/demo).*
 
 <a name="a3"/>
 How to Use
@@ -38,9 +38,9 @@ How to Use
 
 To have the Curtains effect on your webpage:
 
-- Enclose each part that you want to be an individual page in a div with class "page".  
+- Enclose each part that you want to be an individual curtain in a div with class "curtain".  
 
-- Enclose all of these pages that will have the effect in a div with class "pages".  
+- Enclose all of these curtains that will have the effect in a div with class "curtains".  
 
 - Include the javascript file [curtains_0_1.js](https://github.com/ericavonb/curtains/blob/master/curtain/curtains_0_1.js) in the body or in the head when the document loads.  
 
@@ -49,9 +49,9 @@ Planned Updates
 ---------------
 Some planned updates to the plugin:
 
-- Add a function such that adding the class "full" to a page makes it take up the height of the screen.
+- Add a function such that adding the class "full" to a curtain makes it take up the height of the screen.
 
-- Allow elements within the pages to have a parallax effect, i.e. scroll at a different speed from the rest of the page.  
+- Allow elements within the curtains to have a parallax effect, i.e. scroll at a different speed from the rest of the curtain.  
 
 Contact me if you have any additional suggestions.
 
@@ -75,6 +75,6 @@ Author
 
 Erica von Buelow
 
-Contact at: [evonbuelow@gmail.com](mailto:evonbuelow@gmail.com)  
+    Contact at: [evonbuelow@gmail.com](mailto:evonbuelow@gmail.com)  
 
 *If you have any questions, comments, or suggestions, send me an email.*
