@@ -7,19 +7,18 @@ base(color = black)
 
 header
   width: 100%
-  absolute: top 5px left 5px
+  fixed: top -10px left 10px
   height: 0px
   overflow: visible
   a
-    float: left
-    transform: rotate(-20deg)
+    float: right
     line-height: 40px
     padding: 40px 5px
     height: 40px
     width: 110px
     margin: 0
-    background: rgba(245,255,240, 0.3)
-    border-radius: 60px
+    background: rgba(255,255,255, 0.2)
+    border-radius: 50px
     color: dark-blue
 
 
@@ -134,34 +133,25 @@ a
 
 #curtain_4
   background: linear-gradient(left, darken(dark-blue, 15%), 9% dark-blue, 20% darken(dark-blue, 15%), 32% dark-blue, 45% darken(dark-blue, 15%),  50% dark-blue, 61% darken(dark-blue, 15%),  69% dark-blue, 82% darken(dark-blue, 15%), 91% dark-blue, 100% darken(dark-blue, 15%));
-  height: 1000px
+  height: 1500px
 
 #curtain_5
   
   background: darken(#f1f1f1, 10%)
-  a
-    float: left
-    transform: rotate(-20deg)
-    line-height: 40px
-    padding: 40px 5px
-    height: 40px
-    width: 110px
-    margin: 0
-    background: rgba(245,255,240, 0.3)
-    border-radius: 60px
-    color: dark-blue
-    relative: left 200px top 200px
+  height: 1500px
+
 
 footer
   padding: 10px 0px
   width: 100%
   background-color:  darken(#F1F1F1, 40%)
+  group()
+  .left, .right, .center
+    width: 33%
+    float: left
+    text-align: center
   h2
     fs(1.2em)
-    float: left
-    margin: 0px 20px
-    padding: 0px
 
   ul
-    float: left
     breadcrumb(character = '-', spacing = 10px, divider-color = #cdcdcd)

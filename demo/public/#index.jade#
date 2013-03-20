@@ -36,12 +36,12 @@ footer
     ul
       li.github
         a(href="https://github.com/ericavonb") Github
-      li
-        a.facebook(href="https://facebook.com/ericavonb") Facebook
-      li
-        a.twitter(href="htps://twitter.com/ericavonb") Twitter
-      li
-        a.email(href="mailto:evonbuelow@gmail.com") Email
+           li
+               a.facebook(href="https://facebook.com/ericavonb") Facebook
+           li
+               a.twitter(href="htps://twitter.com/ericavonb") Twitter
+           li
+               a.email(href="mailto:evonbuelow@gmail.com") Email
   
 
 :coffeescript

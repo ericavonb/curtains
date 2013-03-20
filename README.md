@@ -40,9 +40,13 @@ To have the Curtains effect on your webpage:
 
 - Enclose each part that you want to be an individual curtain in a div with class "curtain".  
 
-- Enclose all of these curtains that will have the effect in a div with class "curtains".  
+- Enclose all of these curtains that will have the effect in a div with class "curtains".  If you do not have this class, a container element with the class "curtains" will be inserted with the pages as children.
 
-- Include the javascript file [curtains_0_1.js](https://github.com/ericavonb/curtains/blob/master/curtain/curtains_0_1.js) in the body or in the head when the document loads.  
+- Include the javascript file [curtains_0_1.js](https://github.com/ericavonb/curtains/blob/master/curtain/curtains_0_1.js) in the body or in the head when the document loads. 
+
+If you have a footer (an element with the tag, id, or class "footer"), the footer will be affixed to the bottom of the document, below the last curtain. So, the last curtain will pull up until the footer is fully revealed at which point you can't scroll down any more.  
+
+You can access the plugin with the var "curtains". The current curtain number is "curtains.currentCurtain", the initialization function is "curtains.init", the event listener is "curtains.fn".
 
 <a name="a4"/>
 Planned Updates

@@ -171,6 +171,12 @@
 
     window.curtains = curtains;
 
+
+
+
+
+
+
 })(window);
 
 
