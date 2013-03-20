@@ -1,0 +1,32 @@
+/* ======================================================================= 
+                             The Curtain Effect
+   ======================================================================= */
+
+
+function setZindex(e) {
+    var z = e.zIndex;
+    var elems = [];
+
+    if (e.id) {
+	elems.push(document.getElementById(e.id).style.zIndex);
+    } else {
+	if (e.tagName) {
+	    elems.concat(document.getElementsByTagName(e.tagName));
+	 };
+	if (e.className) {
+	    elems.concat(document.getElementsByClassName(e.className));
+	 };
+    };
+
+    for (var i = 0; i < elems.length; i++) {
+	elems[0].style.zIndex = z;
+    };
+};
+
+    
+
+
+
+
+
+}

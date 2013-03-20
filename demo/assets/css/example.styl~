@@ -1,0 +1,64 @@
+@import '_settings'
+
+normalize()
+base()
+
+.navBar
+  width: 100%;
+  height: 40px;
+  noise-gradient(darken(#F1F1F1, 10%), lighten(#F1F1F1, 20%))
+  absolute: top 0px left 0px
+
+  .left, .center, .right
+    float: left
+    width: 33%
+    height: 40px
+
+  h2
+    fs(16px)
+    font-weight: normal
+    line-height: 40px
+    padding: 0
+    margin: 0
+
+  h1
+    fs(2em)
+    line-height: 40px
+    padding: 0
+    margin: 0
+    text-align: center
+
+  a
+    float: right
+    line-height: 40px
+    padding: 0 10px
+    margin: 0
+
+
+a
+  reset-link()
+  color: #555
+  &:hover
+    color: darken(#555, 80%)
+
+
+.page
+  height: 1000px
+  width: 100%
+  padding: 50px
+  gradient( darken(#F1F1F1, 40%), #F1F1F1)
+
+
+footer
+  padding: 20px 0px
+  background-color:  darken(#F1F1F1, 40%)
+  group()
+  .left, .right, .center
+    width: 33%
+    float: left
+    text-align: center
+  h2
+    fs(1.2em)
+
+  li
+    text-align: left
