@@ -79,6 +79,6 @@ Author
 
 Erica von Buelow
 
-    Contact at: [evonbuelow@gmail.com](mailto:evonbuelow@gmail.com)  
+Contact at: [evonbuelow@gmail.com](mailto:evonbuelow@gmail.com)  
 
 *If you have any questions, comments, or suggestions, send me an email.*
